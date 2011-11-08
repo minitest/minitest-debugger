@@ -1,0 +1,7 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+example.rb
+lib/minitest/debugger.rb
