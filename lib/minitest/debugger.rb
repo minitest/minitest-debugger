@@ -34,7 +34,7 @@ module MiniTest::Debugger
       super
     rescue MiniTest::Assertion => e
       warn "Assertion Failed. Dropping into debugger now:"
-      DEBUGGER__.interrupt
+      debugger
       raise e
     end
   end
