@@ -18,7 +18,7 @@ if path then
 end
 SCRIPT_LINES__[__FILE__] = File.readlines(__FILE__)
 
-require 'debug'
+require 'debugger'
 require "minitest/unit"
 
 ##
