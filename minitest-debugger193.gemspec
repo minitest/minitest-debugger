@@ -4,7 +4,7 @@ Gem::Specification.new do |gem|
   gem.description   = 'minitest-debugger fixed to work with Ruby 1.9.3'
   gem.summary       = 'minitest-debugger fixed to work with Ruby 1.9.3'
 
-  gem.files         = `git ls-files`.split('\n')
+  gem.files         = `git ls-files`.split("\n")
   gem.name          = 'minitest-debugger193'
   gem.require_path  = 'lib'
   gem.version       = '1.0.0'
