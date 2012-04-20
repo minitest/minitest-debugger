@@ -1,5 +1,3 @@
-require File.expand_path('../lib/minitest/debugger', __FILE__)
-
 Gem::Specification.new do |gem|
   gem.authors       = ['Ryan Davis', 'Mario Uher']
   gem.email         = ['ryand-ruby@zenspider.com', 'uher.mario@gmail.com']
@@ -9,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split('\n')
   gem.name          = 'minitest-debugger193'
   gem.require_path  = 'lib'
-  gem.version       = Minitest::Debugger::VERSION
+  gem.version       = '1.0.0'
 
   gem.add_dependency 'minitest', '~> 2.7'
   gem.add_dependency 'debugger'
