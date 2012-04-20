@@ -18,7 +18,7 @@ if path then
 end
 SCRIPT_LINES__[__FILE__] = File.readlines(__FILE__)
 
-require 'debug'
+require 'debugger'
 require "minitest/unit"
 
 ##
@@ -34,7 +34,7 @@ module MiniTest::Debugger
       super
     rescue MiniTest::Assertion => e
       warn "Assertion Failed. Dropping into debugger now:"
-      DEBUGGER__.interrupt
+      debugger
       raise e
     end
   end
