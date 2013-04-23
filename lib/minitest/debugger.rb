@@ -27,7 +27,7 @@ require "minitest/unit"
 # that failed assertions will drop into the ruby debugger.
 
 module MiniTest::Debugger
-  VERSION = '1.0.0'
+  VERSION = "1.0.1"
 
   def assert test, msg = nil
     begin
