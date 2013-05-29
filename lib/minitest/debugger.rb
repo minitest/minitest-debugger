@@ -19,20 +19,21 @@ end
 SCRIPT_LINES__[__FILE__] = File.readlines(__FILE__)
 
 require 'debug'
-require "minitest/unit"
+require "minitest"
+require "minitest/test"
 
 ##
 # This is a stupid simple example of how easy it is to make a minitest
 # plugin that does something useful. In this case it wraps assert so
 # that failed assertions will drop into the ruby debugger.
 
-module MiniTest::Debugger
+module Minitest::Debugger
   VERSION = "1.0.1"
 
   def assert test, msg = nil
     begin
       super
-    rescue MiniTest::Assertion => e
+    rescue Minitest::Assertion => e
       warn "Assertion Failed. Dropping into debugger now:"
       DEBUGGER__.interrupt
       raise e
@@ -40,6 +41,6 @@ module MiniTest::Debugger
   end
 end
 
-class MiniTest::Unit::TestCase
-  include MiniTest::Debugger
+class Minitest::Test
+  include Minitest::Debugger
 end

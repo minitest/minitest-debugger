@@ -1,7 +1,7 @@
-# require 'minitest/debugger'
+require 'minitest/debugger' if ENV["MTDB"]
 require 'minitest/autorun'
 
-class TestMiniTestUnitTestCase < MiniTest::Unit::TestCase
+class TestMiniTestUnitTestCase < Minitest::Test
   def good
     42
   end

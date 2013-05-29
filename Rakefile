@@ -11,7 +11,7 @@ Hoe.spec "minitest-debugger" do
 
   self.rubyforge_name = "seattlerb"
 
-  dependency "minitest", "~> 4.0"
+  dependency "minitest", "~> 5.0"
 end
 
 # vim: syntax=ruby
