@@ -12,6 +12,7 @@ Hoe.spec "minitest-debugger" do
   license "MIT"
 
   dependency "minitest", "~> 5.0"
+  dependency "debug",    "~> 1.7"
 end
 
 # vim: syntax=ruby
