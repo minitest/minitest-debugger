@@ -9,6 +9,8 @@ Hoe.plugin :seattlerb
 Hoe.spec "minitest-debugger" do
   developer "Ryan Davis", "ryand-ruby@zenspider.com"
 
+  license "MIT"
+
   dependency "minitest", "~> 5.0"
 end
 
