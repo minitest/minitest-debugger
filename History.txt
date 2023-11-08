@@ -1,3 +1,10 @@
+=== 1.1.0 / 2023-11-07
+
+* 2 minor enhancements:
+
+  * Declare dependency on debug v1.7+
+  * Fix minitest-debug to work with modern debug gem.
+
 === 1.0.3 / 2015-01-09
 
 * 1 bug fix:
@@ -21,4 +28,3 @@
 * 1 major enhancement
 
   * Birthday!
-
