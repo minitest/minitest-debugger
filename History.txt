@@ -1,3 +1,9 @@
+=== 1.1.1 / 2026-01-08
+
+* 1 bug fix:
+
+  * Loosened the minitest dependency to include MT6.
+
 === 1.1.0 / 2023-11-07
 
 * 2 minor enhancements:
